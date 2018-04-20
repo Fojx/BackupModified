@@ -47,4 +47,4 @@ function list_dirfiles($dir) {
 $string = file_get_contents("backup.txt");
 $string = explode("\n", $string);
 $zip = new ZipArchive();
-list_dirfiles("/Users/eleoforos/Desktop/dhmhtrhs");
+list_dirfiles("path");
