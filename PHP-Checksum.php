@@ -6,10 +6,8 @@ if(!file_exists("backup_file.txt")){
 }else
 {
     if (time()-filemtime("backup_file.txt") > 48 * 3600){
-        if(system("rm backup_file.txt") || system("del backup_file.txt")){
+            echo "Update backup_file.txt";
             create_file(__DIR__);
-        }else{
-            echo "Please delete backup_file.txt";
             return;
         }
     }
